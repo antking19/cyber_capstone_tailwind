@@ -3,6 +3,20 @@ module.exports = {
     content: ["./src/**/*.{html,js}", "./node_modules/flowbite/**/*.js"],
     theme: {
         extend: {
+            width: {
+                7.5: ["30px"],
+            },
+            height: {
+                12.5: ["50px"],
+            },
+            colors: {
+                warm: ["#fff0e5"],
+                "destructive-foreground": ["#ed145b"],
+                "cream-foreground": ["#fff"],
+                green: ["#73be48"],
+                primary: ["#f7941e"],
+                secondary: ["#1cbbb4"],
+            },
             fontFamily: {
                 sans: ["Nunito", "sans-serif"],
                 jost: ["Jost", "sans-serif"],
