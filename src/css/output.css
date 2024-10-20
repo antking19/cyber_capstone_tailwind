@@ -1127,6 +1127,10 @@ input:checked + .toggle-bg {
   margin-bottom: 0.25rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1426,25 +1430,12 @@ input:checked + .toggle-bg {
   padding-top: 0.5rem;
 }
 
+.pt-\[78px\] {
+  padding-top: 78px;
+}
+
 .text-center {
   text-align: center;
-}
-
-.font-sans {
-  font-family: Nunito, sans-serif;
-}
-
-.font-bubblegum-sans {
-  font-family: Bubblegum Sans, sans-serif;
-}
-
-.font-jost {
-  font-family: Jost, sans-serif;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .text-lg {
