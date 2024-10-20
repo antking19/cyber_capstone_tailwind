@@ -11,7 +11,7 @@ p {
 }
 
 .btn {
-    @apply relative z-10 flex justify-center items-center gap-[10px] rounded-md overflow-hidden max-h-[60px];
+    @apply relative z-10 inline-flex justify-center items-center gap-[10px] rounded-md overflow-hidden max-h-[60px];
     transition: all 0.5s ease-in-out;
     padding: 20px;
 }
@@ -67,5 +67,22 @@ p {
 @media screen and (min-width: 1536px) {
     .container {
         max-width: 1290px;
+    }
+}
+
+.fadeInUp {
+    visibility: visible;
+
+    animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 20%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
     }
 }

@@ -16,11 +16,18 @@ module.exports = {
                 green: ["#73be48"],
                 primary: ["#f7941e"],
                 secondary: ["#1cbbb4"],
+                background: ["#fff"],
             },
             fontFamily: {
                 sans: ["Nunito", "sans-serif"],
                 jost: ["Jost", "sans-serif"],
                 "bubblegum-sans": ["Bubblegum Sans", "sans-serif"],
+            },
+            padding: {
+                7.5: ["30px"],
+            },
+            gridTemplateColumns: {
+                "[60%_40%]": ["60% 40%"],
             },
         },
     },
