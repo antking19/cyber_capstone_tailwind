@@ -81,6 +81,7 @@ p {
         opacity: 0;
         transform: translate3d(0, 20%, 0);
     }
+
     100% {
         opacity: 1;
         transform: none;
@@ -89,4 +90,9 @@ p {
 
 button[aria-selected="true"] {
     @apply px-5 py-2.5 text-xl text-[#686868] border border-[#F2F2F2] rounded-[10px] cursor-pointer bg-primary-0 text-cream-foreground-0 hover:text-cream-foreground-0 transition-all duration-500;
+}
+
+.shadow-sm {
+    @apply --tw-shadow: 0 0 10px 0 rgba(0 0 0 / 0.2);
+    --tw-shadow-colored: 0 0 10px 0 var(--tw-shadow-color);
 }
