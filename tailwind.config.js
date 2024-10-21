@@ -29,6 +29,9 @@ module.exports = {
             gridTemplateColumns: {
                 "[60%_40%]": ["60% 40%"],
             },
+            gap: {
+                7.5: ["30px"],
+            },
         },
     },
     plugins: [require("flowbite/plugin")],

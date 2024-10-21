@@ -86,3 +86,10 @@ p {
         transform: none;
     }
 }
+
+button[aria-selected="true"] {
+    @apply px-5 py-2.5 text-xl text-[#686868] border border-[#F2F2F2] rounded-[10px] cursor-pointer bg-primary-0 text-cream-foreground-0 hover:text-cream-foreground-0 transition-all duration-500;
+}
+/* button[aria-selected="false"] {
+    @apply px-5;
+} */
