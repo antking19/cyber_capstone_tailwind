@@ -17,6 +17,8 @@ module.exports = {
                 primary: ["#f7941e"],
                 secondary: ["#1cbbb4"],
                 background: ["#fff"],
+                destructive: ["#ed145b"],
+                muted: ["#000"],
             },
             fontFamily: {
                 sans: ["Nunito", "sans-serif"],
