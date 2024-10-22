@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
+        
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ascent - Childcare & Kids School HTML Template</title>
 
+    <!-- Accordion Style -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css"
+    />
+
     <!-- Animate Style -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,7 +44,7 @@
         <div class="top-0 transition-[top] duration-300 z-40 relative">
             <div id="header-container">
                 <!-- top header start -->
-                <div id="top-header" class="bg-destructive-0 sm:block hidden">
+                <div id="top-header" class="hidden bg-destructive-0 sm:block">
                     <div class="container">
                         <div class="flex lg:flex-row flex-col justify-between items-center gap-2 py-[13px]">
                             <div>
@@ -63,25 +73,25 @@
                                 <ul class="flex items-center gap-[14px]">
                                     <li>
                                         <a href="#"
-                                            class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white border-opacity-20 text-cream-foreground-0 hover:bg-primary-0 transition-all duration-500">
+                                            class="flex items-center justify-center w-6 h-6 text-xs transition-all duration-500 border border-white rounded-md border-opacity-20 text-cream-foreground-0 hover:bg-primary-0">
                                             <span><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#"
-                                            class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white border-opacity-20 text-cream-foreground-0 hover:bg-primary-0 transition-all duration-500">
+                                            class="flex items-center justify-center w-6 h-6 text-xs transition-all duration-500 border border-white rounded-md border-opacity-20 text-cream-foreground-0 hover:bg-primary-0">
                                             <span><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#"
-                                            class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white border-opacity-20 text-cream-foreground-0 hover:bg-primary-0 transition-all duration-500">
+                                            class="flex items-center justify-center w-6 h-6 text-xs transition-all duration-500 border border-white rounded-md border-opacity-20 text-cream-foreground-0 hover:bg-primary-0">
                                             <span><i class="fa-brands fa-linkedin" aria-hidden="true"></i></span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#"
-                                            class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white border-opacity-20 text-cream-foreground-0 hover:bg-primary-0 transition-all duration-500">
+                                            class="flex items-center justify-center w-6 h-6 text-xs transition-all duration-500 border border-white rounded-md border-opacity-20 text-cream-foreground-0 hover:bg-primary-0">
                                             <span><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></span>
                                         </a>
                                     </li>
@@ -97,7 +107,7 @@
                         <div class="flex items-center justify-between">
                             <a href="index.html" class="flex items-center gap-1">
                                 <img src="./images/logo.png" alt="Logo" />
-                                <span class="font-bold text-3xl">Ascent</span>
+                                <span class="text-3xl font-bold">Ascent</span>
                             </a>
                             <div class="flex items-center">
                                 <!-- desktop navbar start -->
@@ -105,12 +115,12 @@
                                     <ul class="flex items-center gap-[25px]">
                                         <li class="leading-[164%] relative py-5 group">
                                             <a href="#"
-                                                class="font-semibold text-lg font-jost group-hover:text-primary-0 transition-all duration-500 py-5"
+                                                class="py-5 text-lg font-semibold transition-all duration-500 font-jost group-hover:text-primary-0"
                                                 aria-current="page">Home
-                                                <span><i class="fa-solid fa-angle-down text-sm"
+                                                <span><i class="text-sm fa-solid fa-angle-down"
                                                         aria-hidden="true"></i></span></a>
                                             <ul
-                                                class="absolute top-full z-10 bg-background-0 shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
+                                                class="absolute z-10 invisible transition-all duration-500 translate-y-5 shadow-sm opacity-0 top-full bg-background-0 min-w-56 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
                                                 <li>
                                                     <a href="index.html"
                                                         class="font-semibold font-jost hover:text-cream-foreground-0 hover:bg-primary-0 transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">Home-1</a>
@@ -123,16 +133,16 @@
                                         </li>
                                         <li class="leading-[164%] relative group">
                                             <a href="#"
-                                                class="font-semibold text-lg font-jost group-hover:text-primary-0 transition-all duration-500 py-5">About
+                                                class="py-5 text-lg font-semibold transition-all duration-500 font-jost group-hover:text-primary-0">About
                                                 Us</a>
                                         </li>
                                         <li class="leading-[164%] relative py-5 group">
                                             <a href="#"
-                                                class="font-semibold text-lg font-jost group-hover:text-primary-0 transition-all duration-500 py-5">Services
-                                                <span><i class="fa-solid fa-angle-down text-sm"
+                                                class="py-5 text-lg font-semibold transition-all duration-500 font-jost group-hover:text-primary-0">Services
+                                                <span><i class="text-sm fa-solid fa-angle-down"
                                                         aria-hidden="true"></i></span></a>
                                             <ul
-                                                class="absolute top-full z-10 bg-background-0 shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
+                                                class="absolute z-10 invisible transition-all duration-500 translate-y-5 shadow-sm opacity-0 top-full bg-background-0 min-w-56 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
                                                 <li>
                                                     <a href="index.html"
                                                         class="font-semibold font-jost hover:text-cream-foreground-0 hover:bg-primary-0 transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">Services</a>
@@ -146,11 +156,11 @@
                                         </li>
                                         <li class="leading-[164%] relative py-5 group">
                                             <a href="#"
-                                                class="font-semibold text-lg font-jost group-hover:text-primary-0 transition-all duration-500 py-5">Blog
-                                                <span><i class="fa-solid fa-angle-down text-sm"
+                                                class="py-5 text-lg font-semibold transition-all duration-500 font-jost group-hover:text-primary-0">Blog
+                                                <span><i class="text-sm fa-solid fa-angle-down"
                                                         aria-hidden="true"></i></span></a>
                                             <ul
-                                                class="absolute top-full z-10 bg-background-0 shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
+                                                class="absolute z-10 invisible transition-all duration-500 translate-y-5 shadow-sm opacity-0 top-full bg-background-0 min-w-56 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
                                                 <li>
                                                     <a href="index.html"
                                                         class="font-semibold font-jost hover:text-cream-foreground-0 hover:bg-primary-0 transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">Blog</a>
@@ -164,11 +174,11 @@
                                         </li>
                                         <li class="leading-[164%] relative py-5 group">
                                             <a href="#"
-                                                class="font-semibold text-lg font-jost group-hover:text-primary-0 transition-all duration-500 py-5">Page
-                                                <span><i class="fa-solid fa-angle-down text-sm"
+                                                class="py-5 text-lg font-semibold transition-all duration-500 font-jost group-hover:text-primary-0">Page
+                                                <span><i class="text-sm fa-solid fa-angle-down"
                                                         aria-hidden="true"></i></span></a>
                                             <ul
-                                                class="absolute top-full z-10 bg-background-0 shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
+                                                class="absolute z-10 invisible transition-all duration-500 translate-y-5 shadow-sm opacity-0 top-full bg-background-0 min-w-56 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
                                                 <li>
                                                     <a href="index.html"
                                                         class="font-semibold font-jost hover:text-cream-foreground-0 hover:bg-primary-0 transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">About</a>
@@ -198,7 +208,7 @@
                                         </li>
                                         <li class="leading-[164%] relative group">
                                             <a href="#"
-                                                class="font-semibold text-lg font-jost group-hover:text-primary-0 transition-all duration-500 py-5">Contact
+                                                class="py-5 text-lg font-semibold transition-all duration-500 font-jost group-hover:text-primary-0">Contact
                                                 Us</a>
                                         </li>
                                     </ul>
@@ -313,7 +323,7 @@
                         <div class="rounded-lg border border-gray-200 px-[18px] py-5 flex items-center gap-5 lg:py-7.5 wow animate__animated fadeInUp"
                             style="animation-delay: .3s;">
                             <div
-                                class="flex items-center justify-center rounded-full bg-primary-0 lg:w-20 lg:h-20 w-16 h-16">
+                                class="flex items-center justify-center w-16 h-16 rounded-full bg-primary-0 lg:w-20 lg:h-20">
                                 <i class="icon-kindergarden text-3xl text-cream-foreground-0 lg:text-[40px]"></i>
                             </div>
                             <div>
@@ -325,7 +335,7 @@
                         <div class="rounded-lg border border-gray-200 px-[18px] py-5 flex items-center gap-5 lg:py-7.5 wow animate__animated fadeInUp"
                             style="animation-delay: .3s;">
                             <div
-                                class="flex items-center justify-center rounded-full bg-destructive-0 lg:w-20 lg:h-20 w-16 h-16">
+                                class="flex items-center justify-center w-16 h-16 rounded-full bg-destructive-0 lg:w-20 lg:h-20">
                                 <i class="icon-book text-3xl text-cream-foreground-0 lg:text-[40px]"></i>
                             </div>
                             <div>
@@ -337,7 +347,7 @@
                         <div class="rounded-lg border border-gray-200 px-[18px] py-5 flex items-center gap-5 lg:py-7.5 wow animate__animated fadeInUp"
                             style="animation-delay: .3s;">
                             <div
-                                class="flex items-center justify-center rounded-full bg-green-0 lg:w-20 lg:h-20 w-16 h-16">
+                                class="flex items-center justify-center w-16 h-16 rounded-full bg-green-0 lg:w-20 lg:h-20">
                                 <i class="icon-blocks text-3xl text-cream-foreground-0 lg:text-[40px]"></i>
                             </div>
                             <div>
@@ -349,7 +359,7 @@
                         <div class="rounded-lg border border-gray-200 px-[18px] py-5 flex items-center gap-5 lg:py-7.5 wow animate__animated fadeInUp"
                             style="animation-delay: .3s;">
                             <div
-                                class="flex items-center justify-center rounded-full bg-secondary-0 lg:w-20 lg:h-20 w-16 h-16">
+                                class="flex items-center justify-center w-16 h-16 rounded-full bg-secondary-0 lg:w-20 lg:h-20">
                                 <i class="icon-book text-3xl text-cream-foreground-0 lg:text-[40px]"></i>
                             </div>
                             <div>
@@ -923,8 +933,124 @@
     <!-- Latest Service (TVT) -->
     <section id="service"></section>
 
-    <!-- Some Faq (TKC) -->
-    <section id="someFaq"></section>
+        <!-- Some Faq (TKC) -->
+        <section id="someFaq">
+            <div class="pb-10 lg:pb-15">
+                <div class="container">
+                    <div
+                        class="grid lg:grid-cols-2 grid-cols-1 items-center gap-7.5"
+                    >
+                        <!-- Left or Top someFaq -->
+                        <div class="max-w-[528px] lg:max-w-full mx-auto">
+                            <img
+                                src="./images/banner-1.png"
+                                alt="child with laptop"
+                            />
+                        </div>
+
+                        <!-- Right or Bottom someFaq -->
+                        <div>
+                            <div class="lg:max-w-[520px] pb-10">
+                                <p
+                                    class="font-bubblegum-sans text-secondary-0 text-[19px] wow fadeInUp animate__animated"
+                                >
+                                    Some Faq
+                                </p>
+                                <h2
+                                    class="font-jost font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] wow fadeInUp animate__animated"
+                                    data-wow-delay=".3s"
+                                    style="animation-delay: 0.3s"
+                                >
+                                    Empowering Children Through Education
+                                    Playful Mind
+                                </h2>
+                            </div>
+
+                            <!-- Accordion Start -->
+                            <div>
+                                <div class="accordion-container">
+                                    <!-- accordion item 1 -->
+                                    <div
+                                        class="ac first-accordion rounded-md border-2 border-[#F2F2F2] lg:pl-7.5 pl-5 pr-5 py-[19px]"
+                                    >
+                                        <h2 class="ac-header">
+                                            <button
+                                                type="button"
+                                                class="ac-trigger font-bold lg:text-xl text-[17px] lg:leading-[130%] leading-[120%] font-jost"
+                                            >
+                                                Why do we have to go to school?
+                                            </button>
+                                        </h2>
+                                        <div class="ac-panel">
+                                            <p class="ac-text">
+                                                It is a long established fact
+                                                that a reader will be distracted
+                                                by the read content of a page
+                                                when looking at its layout. Many
+                                                desktop publish packages and web
+                                                page editors now use
+                                                Loremdefault model
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- accordion item 2 -->
+                                    <div
+                                        class="ac rounded-md border-2 border-[#F2F2F2] lg:pl-7.5 pl-5 pr-5 py-[19px] mt-7.5"
+                                    >
+                                        <h2 class="ac-header">
+                                            <button
+                                                type="button"
+                                                class="ac-trigger font-bold lg:text-xl text-[17px] lg:leading-[130%] leading-[120%] font-jost"
+                                            >
+                                                Why do we have to go to school?
+                                            </button>
+                                        </h2>
+                                        <div class="ac-panel">
+                                            <p class="ac-text">
+                                                It is a long established fact
+                                                that a reader will be distracted
+                                                by the read content of a page
+                                                when looking at its layout. Many
+                                                desktop publish packages and web
+                                                page editors now use
+                                                Loremdefault model
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- accordion item 3 -->
+                                    <div
+                                        class="ac rounded-md border-2 border-[#F2F2F2] lg:pl-7.5 pl-5 pr-5 py-[19px] mt-7.5"
+                                    >
+                                        <h2 class="ac-header">
+                                            <button
+                                                type="button"
+                                                class="ac-trigger font-bold lg:text-xl text-[17px] lg:leading-[130%] leading-[120%] font-jost"
+                                            >
+                                                Why do we have to go to school?
+                                            </button>
+                                        </h2>
+                                        <div class="ac-panel">
+                                            <p class="ac-text">
+                                                It is a long established fact
+                                                that a reader will be distracted
+                                                by the read content of a page
+                                                when looking at its layout. Many
+                                                desktop publish packages and web
+                                                page editors now use
+                                                Loremdefault model
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accorditon End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     <!-- Meet Our Professional (TVT) -->
     <section id="professional"></section>
@@ -947,13 +1073,24 @@
     <!-- FLOTBITE JS -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 
-    <!-- WOW JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        new WOW().init();
-    </script>
-</body>
+        <!-- WOW JS -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script>
+            new WOW().init();
+        </script>
 
+        <!-- Accordion JS -->
+        <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script>
+            new Accordion(".accordion-container, .first-accordion", {
+                openOnInit: [0],
+                collapse: false,
+            });
+        </script>
+    </body>
 </html>

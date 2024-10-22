@@ -72,7 +72,6 @@ p {
 
 .fadeInUp {
     visibility: visible;
-
     animation-name: fadeInUp;
 }
 
@@ -91,9 +90,60 @@ p {
 .shadow-sm {
     --tw-shadow: 0 0 10px 0 rgba(0 0 0 / 0.2);
     --tw-shadow-colored: 0 0 10px 0 var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 button[aria-selected="true"] {
     @apply px-5 py-2.5 text-xl text-[#686868] border border-[#F2F2F2] rounded-[10px] cursor-pointer bg-primary-0 text-cream-foreground-0 hover:text-cream-foreground-0 transition-all duration-500;
+}
+
+.ac:first-child {
+    margin-top: 0;
+}
+
+.ac .ac-trigger {
+    font-family: "Jost", serif;
+    padding: 0;
+    font-size: 17px;
+}
+
+.ac .ac-trigger:focus {
+    color: #000;
+}
+
+.ac .ac-trigger::after {
+    background-color: #1cbbb4;
+    border-radius: 6px;
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    line-height: 32px;
+    text-align: center;
+    right: 0;
+}
+
+.ac .ac-trigger[aria-disabled="false"]::after {
+    background-color: #f7941e;
+}
+
+/* aria-disabled="false" */
+
+.ac .ac-panel .ac-text {
+    font-family: "Nunito", serif;
+    padding: 20px 0 0 0;
+    font-size: 16px;
+    color: #686868;
+}
+
+@media screen and (min-width: 1024px) {
+    .ac .ac-trigger {
+        font-size: 20px;
+    }
+
+    .ac .ac-trigger::after {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
 }
