@@ -1191,6 +1191,11 @@ input:checked + .toggle-bg {
   grid-column: 1 / -1;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .-mt-7 {
   margin-top: -1.75rem;
 }
@@ -1225,6 +1230,10 @@ input:checked + .toggle-bg {
 
 .mt-7 {
   margin-top: 1.75rem;
+}
+
+.mt-7\.5 {
+  margin-top: 30px;
 }
 
 .mt-\[64px\] {
@@ -1345,6 +1354,10 @@ input:checked + .toggle-bg {
 
 .max-w-\[431px\] {
   max-width: 431px;
+}
+
+.max-w-\[528px\] {
+  max-width: 528px;
 }
 
 .max-w-\[776px\] {
@@ -1490,6 +1503,10 @@ input:checked + .toggle-bg {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-7\.5 {
+  gap: 30px;
 }
 
 .gap-8 {
@@ -1720,6 +1737,11 @@ input:checked + .toggle-bg {
   padding-bottom: 0.75rem;
 }
 
+.py-\[19px\] {
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1734,6 +1756,14 @@ input:checked + .toggle-bg {
 
 .pb-\[71px\] {
   padding-bottom: 71px;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
 }
 
 .pt-10 {
@@ -1785,6 +1815,10 @@ input:checked + .toggle-bg {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-\[17px\] {
+  font-size: 17px;
 }
 
 .text-\[19px\] {
@@ -1840,6 +1874,10 @@ input:checked + .toggle-bg {
 
 .leading-\[110\%\] {
   line-height: 110%;
+}
+
+.leading-\[120\%\] {
+  line-height: 120%;
 }
 
 .leading-normal {
@@ -2098,9 +2136,55 @@ button[aria-selected="true"]:hover {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-/* button[aria-selected="false"] {
-    @apply px-5;
-} */
+.ac:first-child {
+  margin-top: 0;
+}
+
+.ac .ac-trigger {
+  font-family: "Jost", serif;
+  padding: 0;
+  font-size: 17px;
+}
+
+.ac .ac-trigger:focus {
+  color: #000;
+}
+
+.ac .ac-trigger::after {
+  background-color: #1cbbb4;
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  line-height: 32px;
+  text-align: center;
+  right: 0;
+}
+
+.ac .ac-trigger[aria-disabled="false"]::after {
+  background-color: #f7941e;
+}
+
+/* aria-disabled="false" */
+
+.ac .ac-panel .ac-text {
+  font-family: "Nunito", serif;
+  padding: 20px 0 0 0;
+  font-size: 16px;
+  color: #686868;
+}
+
+@media screen and (min-width: 1024px) {
+  .ac .ac-trigger {
+    font-size: 20px;
+  }
+
+  .ac .ac-trigger::after {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
 
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
@@ -2402,6 +2486,10 @@ button[aria-selected="true"]:hover {
     max-width: 439px;
   }
 
+  .lg\:max-w-\[520px\] {
+    max-width: 520px;
+  }
+
   .lg\:max-w-\[630px\] {
     max-width: 630px;
   }
@@ -2410,12 +2498,20 @@ button[aria-selected="true"]:hover {
     max-width: 100%;
   }
 
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-\[60\%_40\%\] {
     grid-template-columns: 60% 40%;
   }
 
   .lg\:gap-7\.5 {
     gap: 30px;
+  }
+
+  .lg\:pl-7\.5 {
+    padding-left: 30px;
   }
 
   .lg\:pt-\[72px\] {
@@ -2429,6 +2525,11 @@ button[aria-selected="true"]:hover {
 
   .lg\:text-\[32px\] {
     font-size: 32px;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .lg\:leading-\[125\%\] {

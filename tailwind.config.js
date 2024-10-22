@@ -32,6 +32,9 @@ module.exports = {
             gap: {
                 7.5: ["30px"],
             },
+            spacing: {
+                7.5: ["30px"],
+            },
         },
     },
     plugins: [require("flowbite/plugin")],

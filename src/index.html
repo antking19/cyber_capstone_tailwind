@@ -5,6 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Ascent - Childcare & Kids School HTML Template</title>
 
+        <!-- Accordion Style -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css"
+        />
+
         <!-- Animate Style -->
         <link
             rel="stylesheet"
@@ -1009,7 +1015,123 @@
         <section id="service"></section>
 
         <!-- Some Faq (TKC) -->
-        <section id="someFaq"></section>
+        <section id="someFaq">
+            <div class="pb-10 lg:pb-15">
+                <div class="container">
+                    <div
+                        class="grid lg:grid-cols-2 grid-cols-1 items-center gap-7.5"
+                    >
+                        <!-- Left or Top someFaq -->
+                        <div class="max-w-[528px] lg:max-w-full mx-auto">
+                            <img
+                                src="./images/banner-1.png"
+                                alt="child with laptop"
+                            />
+                        </div>
+
+                        <!-- Right or Bottom someFaq -->
+                        <div>
+                            <div class="lg:max-w-[520px] pb-10">
+                                <p
+                                    class="font-bubblegum-sans text-secondary-0 text-[19px] wow fadeInUp animate__animated"
+                                >
+                                    Some Faq
+                                </p>
+                                <h2
+                                    class="font-jost font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] wow fadeInUp animate__animated"
+                                    data-wow-delay=".3s"
+                                    style="animation-delay: 0.3s"
+                                >
+                                    Empowering Children Through Education
+                                    Playful Mind
+                                </h2>
+                            </div>
+
+                            <!-- Accordion Start -->
+                            <div>
+                                <div class="accordion-container">
+                                    <!-- accordion item 1 -->
+                                    <div
+                                        class="ac first-accordion rounded-md border-2 border-[#F2F2F2] lg:pl-7.5 pl-5 pr-5 py-[19px]"
+                                    >
+                                        <h2 class="ac-header">
+                                            <button
+                                                type="button"
+                                                class="ac-trigger font-bold lg:text-xl text-[17px] lg:leading-[130%] leading-[120%] font-jost"
+                                            >
+                                                Why do we have to go to school?
+                                            </button>
+                                        </h2>
+                                        <div class="ac-panel">
+                                            <p class="ac-text">
+                                                It is a long established fact
+                                                that a reader will be distracted
+                                                by the read content of a page
+                                                when looking at its layout. Many
+                                                desktop publish packages and web
+                                                page editors now use
+                                                Loremdefault model
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- accordion item 2 -->
+                                    <div
+                                        class="ac rounded-md border-2 border-[#F2F2F2] lg:pl-7.5 pl-5 pr-5 py-[19px] mt-7.5"
+                                    >
+                                        <h2 class="ac-header">
+                                            <button
+                                                type="button"
+                                                class="ac-trigger font-bold lg:text-xl text-[17px] lg:leading-[130%] leading-[120%] font-jost"
+                                            >
+                                                Why do we have to go to school?
+                                            </button>
+                                        </h2>
+                                        <div class="ac-panel">
+                                            <p class="ac-text">
+                                                It is a long established fact
+                                                that a reader will be distracted
+                                                by the read content of a page
+                                                when looking at its layout. Many
+                                                desktop publish packages and web
+                                                page editors now use
+                                                Loremdefault model
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- accordion item 3 -->
+                                    <div
+                                        class="ac rounded-md border-2 border-[#F2F2F2] lg:pl-7.5 pl-5 pr-5 py-[19px] mt-7.5"
+                                    >
+                                        <h2 class="ac-header">
+                                            <button
+                                                type="button"
+                                                class="ac-trigger font-bold lg:text-xl text-[17px] lg:leading-[130%] leading-[120%] font-jost"
+                                            >
+                                                Why do we have to go to school?
+                                            </button>
+                                        </h2>
+                                        <div class="ac-panel">
+                                            <p class="ac-text">
+                                                It is a long established fact
+                                                that a reader will be distracted
+                                                by the read content of a page
+                                                when looking at its layout. Many
+                                                desktop publish packages and web
+                                                page editors now use
+                                                Loremdefault model
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accorditon End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Meet Our Professional (TVT) -->
         <section id="professional"></section>
@@ -1041,6 +1163,15 @@
         ></script>
         <script>
             new WOW().init();
+        </script>
+
+        <!-- Accordion JS -->
+        <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script>
+            new Accordion(".accordion-container, .first-accordion", {
+                openOnInit: [0],
+                collapse: false,
+            });
         </script>
     </body>
 </html>
