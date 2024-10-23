@@ -165,7 +165,7 @@ button[aria-selected="true"] {
     }
 }
 
-@media screen and (max-width: 1289.89px) {
+@media screen and (max-width: 1289.89px) and (min-width: 1280px) {
     .container {
         max-width: 1024px;
     }
