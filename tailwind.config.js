@@ -36,6 +36,10 @@ module.exports = {
             },
             spacing: {
                 7.5: ["30px"],
+                15: ["60px"],
+            },
+            gridTemplateColumns: {
+                "[37%_auto]": ["37% auto"],
             },
         },
     },
