@@ -46,6 +46,10 @@ module.exports = {
             maxHeight: {
                 15: ["60px"],
             },
+            boxShadow: {
+                "3xl": ["0px 4.4px 20px -1px rgba(19, 16, 34, 0.1)"],
+                "4xl": ["0px 4.4px 20px -1px rgba(19, 16, 34, 0.05)"],
+            }
         },
     },
     plugins: [require("flowbite/plugin")],
