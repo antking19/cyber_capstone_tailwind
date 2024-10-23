@@ -1099,6 +1099,10 @@ input:checked + .toggle-bg {
   bottom: 0px;
 }
 
+.bottom-20 {
+  bottom: 5rem;
+}
+
 .bottom-\[165px\] {
   bottom: 165px;
 }
@@ -1374,6 +1378,10 @@ input:checked + .toggle-bg {
 
 .w-11 {
   width: 2.75rem;
+}
+
+.w-12\.5 {
+  width: 50px;
 }
 
 .w-16 {
@@ -1743,6 +1751,10 @@ input:checked + .toggle-bg {
 
 .border-2 {
   border-width: 2px;
+}
+
+.border-\[3px\] {
+  border-width: 3px;
 }
 
 .border-b {
@@ -3205,6 +3217,10 @@ button[aria-selected="true"]:hover {
 }
 
 @media (min-width: 1280px) {
+  .xl\:left-\[90\%\] {
+    left: 90%;
+  }
+
   .xl\:block {
     display: block;
   }
