@@ -27,6 +27,7 @@ module.exports = {
             },
             padding: {
                 7.5: ["30px"],
+                15: ["60px"],
             },
             gridTemplateColumns: {
                 "[60%_40%]": ["60% 40%"],
@@ -40,6 +41,9 @@ module.exports = {
             },
             gridTemplateColumns: {
                 "[37%_auto]": ["37% auto"],
+            },
+            maxHeight: {
+                15: ["60px"],
             },
         },
     },
