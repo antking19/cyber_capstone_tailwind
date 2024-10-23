@@ -30,7 +30,7 @@ p {
 
 @media screen and (max-width: 1024px) {
     .btn,
-    .btn-con
+    .btn-con,
     .btn-rounded-full {
         padding: 10px 30px !important;
     }
