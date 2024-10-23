@@ -13,7 +13,7 @@ p {
 .btn {
     @apply relative z-10 inline-flex justify-center items-center gap-[10px] rounded-md overflow-hidden max-h-[60px];
     transition: all 0.5s ease-in-out;
-    padding: 20px;
+    padding: 20px 30px;
 }
 
 .btn::after {
@@ -220,4 +220,30 @@ button[aria-selected="true"] {
     --tw-shadow-colored: 0px 4.4px 20px -1px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
         var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.bg-newsletter-banner {
+    background-image: url(./../images/bg-img.png);
+}
+
+.bg-newsletter-egg {
+    background-image: url(../images/egg-shap.png);
+}
+
+.btn-con {
+    @apply z-10 inline-flex justify-center items-center gap-[10px] rounded-md overflow-hidden max-h-[60px];
+    transition: all 0.5s ease-in-out;
+    padding: 20px 30px;
+}
+
+.btn-con::after {
+    @apply absolute top-0 left-0 w-[0%] h-full rounded-md;
+    content: "";
+    background-color: #1cbbb4;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-con:hover::after {
+    @apply w-full;
 }
