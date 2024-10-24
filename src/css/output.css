@@ -2027,10 +2027,6 @@ input:checked + .toggle-bg {
   background-color: rgb(28 187 180 / var(--tw-bg-opacity));
 }
 
-.bg-transparent {
-  background-color: transparent;
-}
-
 .bg-warm-0 {
   --tw-bg-opacity: 1;
   background-color: rgb(255 240 229 / var(--tw-bg-opacity));
@@ -2043,6 +2039,10 @@ input:checked + .toggle-bg {
 
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-\[linear-gradient\(180deg\2c _\#FFF0E5_0\%\2c _rgba\(255\2c _240\2c _229\2c _0\.00\)_100\%\)\] {
@@ -2821,6 +2821,36 @@ button[aria-selected="true"]:hover {
   top: 60px;
 }
 
+.btn-con {
+  z-index: 10;
+  display: inline-flex;
+  max-height: 60px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden;
+  border-radius: 0.375rem;
+  transition: all 0.5s ease-in-out;
+  padding: 20px 30px;
+}
+
+.btn-con::after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 0%;
+  border-radius: 0.375rem;
+  content: "";
+  background-color: #1cbbb4;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-con:hover::after {
+  width: 100%;
+}
+
 .slick-dots {
   display: flex;
   justify-content: center;
@@ -2855,36 +2885,6 @@ button[aria-selected="true"]:hover {
 li.slick-active button {
   background-color: #1cbbb4;
   width: 33px;
-}
-
-.btn-con {
-  z-index: 10;
-  display: inline-flex;
-  max-height: 60px;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  overflow: hidden;
-  border-radius: 0.375rem;
-  transition: all 0.5s ease-in-out;
-  padding: 20px 30px;
-}
-
-.btn-con::after {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 0%;
-  border-radius: 0.375rem;
-  content: "";
-  background-color: #1cbbb4;
-  z-index: -1;
-  transition: all 0.5s ease-in-out;
-}
-
-.btn-con:hover::after {
-  width: 100%;
 }
 
 .after\:absolute::after {
@@ -2991,11 +2991,6 @@ li.slick-active button {
   border-color: transparent;
 }
 
-.hover\:bg-background-0:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-blue-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(30 66 159 / var(--tw-bg-opacity));
@@ -3022,6 +3017,11 @@ li.slick-active button {
 }
 
 .hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-background-0:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
