@@ -204,24 +204,6 @@ button[aria-selected="true"] {
     top: 60px;
 }
 
-.btn-con {
-    @apply z-10 inline-flex justify-center items-center gap-[10px] rounded-md overflow-hidden max-h-[60px];
-    transition: all 0.5s ease-in-out;
-    padding: 20px 30px;
-}
-
-.btn-con::after {
-    @apply absolute top-0 left-0 w-[0%] h-full rounded-md;
-    content: "";
-    background-color: #1cbbb4;
-    z-index: -1;
-    transition: all 0.5s ease-in-out;
-}
-
-.btn-con:hover::after {
-    @apply w-full;
-}
-
 .slick-dots {
     display: flex;
     justify-content: center;
@@ -257,3 +239,22 @@ li.slick-active button {
     background-color: #1cbbb4;
     width: 33px;
 }
+
+.btn-con {
+    @apply z-10 inline-flex justify-center items-center gap-[10px] rounded-md overflow-hidden max-h-[60px];
+    transition: all 0.5s ease-in-out;
+    padding: 20px 30px;
+}
+
+.btn-con::after {
+    @apply absolute top-0 left-0 w-[0%] h-full rounded-md;
+    content: "";
+    background-color: #1cbbb4;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-con:hover::after {
+    @apply w-full;
+}
+
