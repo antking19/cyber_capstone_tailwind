@@ -29,6 +29,7 @@ p {
 }
 
 @media screen and (max-width: 1024px) {
+
     .btn,
     .btn-con,
     .btn-rounded-full {
@@ -97,13 +98,6 @@ p {
         opacity: 1;
         transform: none;
     }
-}
-
-.shadow-sm {
-    --tw-shadow: 0 0 10px 0 rgba(0 0 0 / 0.2);
-    --tw-shadow-colored: 0 0 10px 0 var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 button[aria-selected="true"] {
@@ -210,14 +204,6 @@ button[aria-selected="true"] {
     top: 60px;
 }
 
-.bg-newsletter-banner {
-    background-image: url(./../images/bg-img.png);
-}
-
-.bg-newsletter-egg {
-    background-image: url(../images/egg-shap.png);
-}
-
 .btn-con {
     @apply z-10 inline-flex justify-center items-center gap-[10px] rounded-md overflow-hidden max-h-[60px];
     transition: all 0.5s ease-in-out;
@@ -234,4 +220,40 @@ button[aria-selected="true"] {
 
 .btn-con:hover::after {
     @apply w-full;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+}
+
+.slick-dots ul {
+    display: flex;
+    list-style: none;
+}
+
+.slick-dots li {
+    top: 0;
+    left: 0;
+    width: auto;
+}
+
+.slick-dots li button {
+    display: block;
+    width: 15px;
+    height: 5px;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px;
+    background-color: #CCC;
+    text-indent: -9999px;
+}
+
+li.slick-active button {
+    background-color: #1cbbb4;
+    width: 33px;
 }

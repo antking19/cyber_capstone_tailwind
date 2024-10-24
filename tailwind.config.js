@@ -47,9 +47,15 @@ module.exports = {
                 15: ["60px"],
             },
             boxShadow: {
+                sm: ["0 0 10px 0 rgba(0 0 0 / 0.2)"],
                 "3xl": ["0px 4.4px 20px -1px rgba(19, 16, 34, 0.1)"],
                 "4xl": ["0px 4.4px 20px -1px rgba(19, 16, 34, 0.05)"],
-            }
+            },
+            backgroundImage: {
+                "testimonial-banner": "url('../images/bg2-img.png')",
+                "newsletter-banner": "url('../images/bg-img.png')",
+                "newsletter-egg": "url('../images/egg-shap.png')",
+            },
         },
     },
     plugins: [require("flowbite/plugin")],
