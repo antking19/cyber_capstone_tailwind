@@ -29,6 +29,7 @@ p {
 }
 
 @media screen and (max-width: 1024px) {
+
     .btn,
     .btn-con,
     .btn-rounded-full {
@@ -97,13 +98,6 @@ p {
         opacity: 1;
         transform: none;
     }
-}
-
-.shadow-sm {
-    --tw-shadow: 0 0 10px 0 rgba(0 0 0 / 0.2);
-    --tw-shadow-colored: 0 0 10px 0 var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 button[aria-selected="true"] {
@@ -208,14 +202,6 @@ button[aria-selected="true"] {
 
 .top-15 {
     top: 60px;
-}
-
-.bg-newsletter-banner {
-    background-image: url(./../images/bg-img.png);
-}
-
-.bg-newsletter-egg {
-    background-image: url(../images/egg-shap.png);
 }
 
 .btn-con {
