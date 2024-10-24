@@ -2777,7 +2777,7 @@ button[aria-selected="true"]:hover {
   }
 }
 
-@media screen and (max-width: 1289.89px) {
+@media screen and (max-width: 1289.89px) and (min-width: 1280px) {
   .container {
     max-width: 1024px;
   }
@@ -3867,4 +3867,3 @@ li.slick-active button {
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-
