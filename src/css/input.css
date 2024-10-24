@@ -221,3 +221,39 @@ button[aria-selected="true"] {
 .btn-con:hover::after {
     @apply w-full;
 }
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+}
+
+.slick-dots ul {
+    display: flex;
+    list-style: none;
+}
+
+.slick-dots li {
+    top: 0;
+    left: 0;
+    width: auto;
+}
+
+.slick-dots li button {
+    display: block;
+    width: 15px;
+    height: 5px;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px;
+    background-color: #CCC;
+    text-indent: -9999px;
+}
+
+li.slick-active button {
+    background-color: #1cbbb4;
+    width: 33px;
+}
